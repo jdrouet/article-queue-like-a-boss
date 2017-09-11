@@ -1,0 +1,24 @@
+{
+  "name": "queue-like-boss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "stress": "ab -n 10000 -c 10 http://localhost:3000/test",
+    "option-amqplib-server": "node option-amqplib/server.js",
+    "option-amqplib-worker": "node option-amqplib/worker.js",
+    "option-bull-server": "node option-bull/server.js",
+    "option-bull-worker": "node option-bull/worker.js",
+    "option-kue-server": "node option-kue/server.js",
+    "option-kue-worker": "node option-kue/worker.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.5.1",
+    "bull": "^3.1.0",
+    "kue": "^0.11.6"
+  }
+}
